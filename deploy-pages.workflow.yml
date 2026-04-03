@@ -1,3 +1,7 @@
+# Скопируйте этот файл в репозитории на GitHub как:
+#   .github/workflows/deploy-pages.yml
+# (через веб-интерфейс или git push с PAT, у которого включена область «workflow»)
+
 name: Deploy to GitHub Pages
 
 on:
