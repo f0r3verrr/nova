@@ -1,30 +1,11 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
-@import "@fontsource-variable/geist";
 
 @custom-variant dark (&:is(.dark *));
 
-@theme {
-  --font-display: "Syne", ui-sans-serif, system-ui, sans-serif;
-  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
-  --color-void: #0a0a0c;
-  --color-ink: #12121a;
-  --color-cryo: #22d3ee;
-  --color-ember: #f43f5e;
-}
-
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  min-height: 100svh;
-  background-color: var(--color-void);
-  color: #e4e4e7;
-  font-family: var(--font-sans);
-  -webkit-font-smoothing: antialiased;
 }
 
 #root {
@@ -32,8 +13,10 @@ body {
 }
 
 @theme inline {
-  --font-heading: var(--font-sans);
-  --font-sans: 'Geist Variable', sans-serif;
+  --font-heading: "Syne", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-cryo: #22d3ee;
+  --color-ember: #fb7185;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -110,10 +93,10 @@ body {
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
+  --background: oklch(0.07 0.02 270);
+  --foreground: oklch(0.96 0.01 270);
+  --card: oklch(0.12 0.02 270 / 0.55);
+  --card-foreground: oklch(0.96 0.01 270);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
   --primary: oklch(0.922 0 0);

@@ -6,9 +6,9 @@ import { defineConfig } from 'vite'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-// GitHub Pages project site: https://<user>.github.io/<REPO>/
+// GitHub Pages: https://f0r3verrr.github.io/nova/
 export default defineConfig({
-  base: '/MassageSite/',
+  base: '/nova/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
