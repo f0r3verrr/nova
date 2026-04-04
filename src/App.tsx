@@ -66,15 +66,15 @@ function App() {
         />
       </div>
 
-      <header className="mx-auto flex max-w-6xl items-center px-6 py-8">
+      <header className="mx-auto flex max-w-6xl items-center px-6 py-6 md:py-7">
         <a
           href={BASE}
           className="inline-flex shrink-0 items-center rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         >
           <img
             src={HEADER_LOGO_SRC}
-            alt="Nova"
-            className="h-14 w-auto max-h-16 object-contain object-left sm:h-16 sm:max-h-[4.5rem] md:h-[4.75rem] md:max-h-20"
+            alt="ВКС-ПРОЕКТ"
+            className="h-14 w-auto max-h-16 object-contain object-left brightness-0 invert sm:h-16 sm:max-h-[4.5rem] md:h-[4.75rem] md:max-h-20"
             width={280}
             height={80}
             decoding="async"
@@ -89,7 +89,7 @@ function App() {
         >
           <div className="flex max-w-xl flex-1 flex-col items-center text-center md:items-start md:text-left">
             <AnimatedText
-              text="Тихий импульс"
+              text="Точный импульс"
               duration={0.05}
               delay={0.03}
               textClassName="font-heading text-4xl tracking-tight text-balance text-zinc-50 sm:text-5xl md:text-6xl"
@@ -204,15 +204,16 @@ function App() {
                 <a href="mailto:vcspro@internet.ru">Написать на почту</a>
               </Button>
               <Button className="rounded-full" size="lg" variant="outline" asChild>
-                <a href="tel:+79000080956">Позвонить</a>
+                <a href="tel:+79000080956">Позвонить: +7 (900) 008-09-56</a>
               </Button>
             </div>
-            <p className="mt-6 text-xs text-muted-foreground">
+            <p className="mt-5 text-xs text-muted-foreground">
+              Дополнительно:{" "}
               <a
-                href="tel:+79000080935"
+                href="tel:+79000080925"
                 className="text-zinc-400 underline-offset-2 hover:text-zinc-200 hover:underline"
               >
-                +7 900 008-09-35
+                +7 (900) 008-09-25
               </a>
             </p>
           </div>
@@ -220,57 +221,68 @@ function App() {
       </main>
 
       <footer className="border-t border-white/10">
-        <div className="mx-auto max-w-5xl px-6 py-6">
-          <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-start sm:justify-center sm:gap-8 lg:gap-10">
-            <p className="w-full max-w-[22rem] text-pretty text-center text-[0.7rem] leading-snug text-zinc-400 sm:w-auto sm:text-left sm:text-xs lg:max-w-[24rem]">
-              Проект выполнен при поддержке «Фонда содействия инновациям» в рамках
-              программы «Студенческий стартап» федерального проекта «Платформа
-              университетского технологического предпринимательства».
-            </p>
-            <img
-              src={fasieLogo}
-              alt="Фонд содействия инновациям"
-              className="h-14 w-auto max-w-[200px] shrink-0 object-contain sm:h-16 sm:max-w-[220px]"
-            />
+        <div className="mx-auto w-full max-w-6xl px-6 py-5">
+          <div className="rounded-lg border border-white/[0.06] bg-white/[0.02] px-4 py-4 sm:px-5 sm:py-4">
+            <div className="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] lg:items-start lg:gap-5 xl:gap-8">
+              <div className="order-2 justify-self-start text-left lg:order-1 lg:pr-2">
+                <p className="font-heading text-[0.6rem] font-semibold uppercase tracking-[0.2em] text-zinc-600">
+                  Реквизиты
+                </p>
+                <div className="mt-2 space-y-1.5 text-[0.65rem] leading-snug text-zinc-500 sm:text-[0.6875rem]">
+                  <p className="font-medium text-zinc-300">
+                    ООО Научно-инновационная компания «ВКС-ПРОЕКТ»
+                  </p>
+                  <p>ИНН 9200030111 · КПП 920001001 · ОГРН 1259200004601</p>
+                  <p className="text-balance">
+                    299011, г. Севастополь, ул. Большая Морская, дом 21, А/Я 115
+                  </p>
+                </div>
+              </div>
+
+              <div className="order-1 flex max-w-md flex-col items-center gap-3 justify-self-center text-center lg:order-2 lg:max-w-[22rem] lg:px-2 xl:max-w-[24rem]">
+                <p className="text-pretty text-[0.65rem] leading-snug text-zinc-500 sm:text-[0.7rem]">
+                  Проект выполнен при поддержке «Фонда содействия инновациям» в рамках
+                  программы «Студенческий стартап» федерального проекта «Платформа
+                  университетского технологического предпринимательства».
+                </p>
+                <img
+                  src={fasieLogo}
+                  alt="Фонд содействия инновациям"
+                  className="h-12 w-auto max-w-[180px] shrink-0 object-contain sm:h-14 sm:max-w-[200px]"
+                />
+              </div>
+
+              <div className="order-3 flex flex-col items-end gap-1.5 self-start text-right text-[0.65rem] text-zinc-400 sm:text-[0.6875rem] lg:pl-2">
+                <a
+                  href="https://vcspro.ru"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-zinc-300 underline-offset-2 hover:text-white hover:underline"
+                >
+                  vcspro.ru
+                </a>
+                <a
+                  href="mailto:vcspro@internet.ru"
+                  className="text-zinc-300 underline-offset-2 hover:text-white hover:underline"
+                >
+                  vcspro@internet.ru
+                </a>
+                <p>
+                  <a href="tel:+79000080956" className="hover:text-zinc-100 hover:underline">
+                    +7 (900) 008-09-56
+                  </a>
+                  <span className="text-zinc-600"> · </span>
+                  <a href="tel:+79000080925" className="hover:text-zinc-100 hover:underline">
+                    +7 (900) 008-09-25
+                  </a>
+                </p>
+              </div>
+            </div>
           </div>
 
-          <div className="mt-4 border-t border-white/[0.06] pt-3">
-            <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1.5 text-center text-[0.65rem] leading-tight text-zinc-500 sm:gap-x-3 sm:text-xs">
-              <span className="text-zinc-400 max-sm:basis-full">
-                299011, г. Севастополь, ул. Большая Морская, 21, а/я 115
-              </span>
-              <span className="hidden text-zinc-700 sm:inline" aria-hidden>
-                ·
-              </span>
-              <a
-                href="mailto:vcspro@internet.ru"
-                className="text-zinc-300 underline-offset-2 hover:text-white hover:underline"
-              >
-                vcspro@internet.ru
-              </a>
-              <span className="text-zinc-700" aria-hidden>
-                ·
-              </span>
-              <a
-                href="tel:+79000080956"
-                className="hover:text-zinc-200 hover:underline"
-              >
-                +7 900 008-09-56
-              </a>
-              <span className="text-zinc-700" aria-hidden>
-                ·
-              </span>
-              <a
-                href="tel:+79000080935"
-                className="hover:text-zinc-200 hover:underline"
-              >
-                +7 900 008-09-35
-              </a>
-            </div>
-            <p className="mt-3 text-center text-[0.65rem] text-muted-foreground">
-              © {new Date().getFullYear()} Nova · детали продукта появятся позже
-            </p>
-          </div>
+          <p className="mt-3 text-center text-[0.6rem] text-muted-foreground">
+            © {new Date().getFullYear()} Nova · детали продукта появятся позже
+          </p>
         </div>
       </footer>
     </div>
