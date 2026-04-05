@@ -15,7 +15,7 @@ import { cn } from "@/lib/utils"
 import fasieLogo from "./head_logo_fasie.png"
 
 const BASE = import.meta.env.BASE_URL
-const HEADER_LOGO_SRC = `${BASE}logo_header.png`
+const HEADER_LOGO_SRC = `${BASE}logo_header.svg`
 const HERO_LOGO_SRC = `${BASE}logo_main.png`
 
 const teasers = [
@@ -74,9 +74,9 @@ function App() {
           <img
             src={HEADER_LOGO_SRC}
             alt="ВКС-ПРОЕКТ"
-            className="h-14 w-auto max-h-16 object-contain object-center sm:h-16 sm:max-h-[4.5rem] md:h-[4.75rem] md:max-h-20"
-            width={320}
-            height={160}
+            className="h-28 w-auto max-h-32 object-contain object-center sm:h-32 sm:max-h-40 md:h-40 md:max-h-[11rem]"
+            width={480}
+            height={240}
             decoding="async"
           />
         </a>
