@@ -66,7 +66,7 @@ function App() {
         />
       </div>
 
-      <header className="mx-auto flex max-w-6xl items-center px-6 py-6 md:py-7">
+      <header className="mx-auto flex max-w-6xl items-center justify-center px-6 py-6 md:justify-start md:py-7">
         <a
           href={BASE}
           className="inline-flex shrink-0 items-center rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
@@ -74,9 +74,9 @@ function App() {
           <img
             src={HEADER_LOGO_SRC}
             alt="ВКС-ПРОЕКТ"
-            className="h-14 w-auto max-h-16 object-contain object-left brightness-0 invert sm:h-16 sm:max-h-[4.5rem] md:h-[4.75rem] md:max-h-20"
-            width={280}
-            height={80}
+            className="h-14 w-auto max-h-16 object-contain object-center sm:h-16 sm:max-h-[4.5rem] md:h-[4.75rem] md:max-h-20"
+            width={320}
+            height={160}
             decoding="async"
           />
         </a>
