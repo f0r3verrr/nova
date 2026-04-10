@@ -6,9 +6,9 @@ import { defineConfig } from 'vite'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-// GitHub Pages: https://f0r3verrr.github.io/nova/
+// Продакшен: корень домена (https://vcspro.ru/). Старый URL …/github.io/nova/ без редиректа работать не будет.
 export default defineConfig({
-  base: '/nova/',
+  base: '/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
